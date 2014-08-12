@@ -61,7 +61,8 @@ The `Scalavro` artifacts are available from Maven Central. The current release i
 Using SBT:
 
 ```scala
-libraryDependencies += "com.gensler" %% "scalavro" % "0.6.2"
+resolvers += "Luke Cycon's Maven Snapshots" at "http://maven.lukecycon.com/snapshots"
+libraryDependencies += "com.gensler" %% "scalavro" % "0.7.0-SNAPSHOT"
 ```
 
 ## API Documentation
