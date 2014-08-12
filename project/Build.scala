@@ -5,11 +5,11 @@ import com.typesafe.sbt.SbtScalariform._
 
 object Common {
 
-  val ORGANIZATION = "com.gensler"
+  val ORGANIZATION = "com.lukecycon"
   val PROJECT_NAME = "scalavro"
   val PROJECT_VERSION = "0.7.0-SNAPSHOT"
 
-  val SCALA_VERSION = "2.11.1"
+  val SCALA_VERSION = "2.11.2"
   val SCALA_XML_VERSION = "1.0.2"
 
 //////////////////////////////////////////////////////////////////////////////
