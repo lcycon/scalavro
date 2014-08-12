@@ -23,7 +23,7 @@ lazy val util = Common.subproject("util")
 
 version in ThisBuild := Common.PROJECT_VERSION
 
-organization in ThisBuild := Common.ORGANIZATION
+organization := Common.ORGANIZATION
 
 scalaVersion in ThisBuild := Common.SCALA_VERSION
 
@@ -73,9 +73,8 @@ pomExtra in (ThisBuild) := (
     )
 
 publishTo in (ThisBuild) <<= version { (v: String) =>
-      val nexus = "https://oss.sonatype.org/"
       if (v.trim.endsWith("SNAPSHOT"))
-        Some("snapshots" at nexus + "content/repositories/snapshots")
+        Some(Resolver.sftp("Luke Cycon's Maven Repo", "maven.lukecycon.com", "maven.lukecycon.com/snapshots/"))
       else
-        Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+        Some(Resolver.sftp("Luke Cycon's Maven Repo", "maven.lukecycon.com", "maven.lukecycon.com/releases/"))
     }

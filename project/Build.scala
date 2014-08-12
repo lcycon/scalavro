@@ -1,4 +1,4 @@
-import sbt._
+import sbt._, Keys._
 
 import scalariform.formatter.preferences._
 import com.typesafe.sbt.SbtScalariform._
