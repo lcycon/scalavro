@@ -62,7 +62,7 @@ Using SBT:
 
 ```scala
 resolvers += "Luke Cycon's Maven Snapshots" at "http://maven.lukecycon.com/snapshots"
-libraryDependencies += "com.gensler" %% "scalavro" % "0.7.0-SNAPSHOT"
+libraryDependencies += "com.lukecycon" %% "scalavro" % "0.7.0-SNAPSHOT"
 ```
 
 ## API Documentation
