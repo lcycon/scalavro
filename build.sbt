@@ -13,6 +13,8 @@ Common.commonSettings
 // Subproject definitions
 //////////////////////////////////////
 
+lazy val root = project.in(file(".")).aggregate(core, util).dependsOn(core)
+
 lazy val core = Common.subproject("core").dependsOn(util)
 
 lazy val util = Common.subproject("util")
